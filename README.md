@@ -13,4 +13,5 @@ This class is run with two command line arguments where the first argument is th
 size = length * length, and the second argument is the number of trials run with a grid size of length * length.
 A confidence interval is constructred where the percolation value lies within the low end and high end with 95% accuracy.
 Note: there is no definitive percolation value for any grid, thus, the value must be estimated.
-
+# Author
+Matt Sexton
