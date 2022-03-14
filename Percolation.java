@@ -130,18 +130,4 @@ public class Percolation {
     private void validation(int row, int col) {
         if (row < 1 || row > sqrt || col < 1 || col > sqrt) throw new IllegalArgumentException();
     }
-
-    // Test object creation and function of the class. Not exhaustive.
-    // Remove this from github
-    public static void main(String[] args) {
-        WeightedQuickUnionUF uf = new WeightedQuickUnionUF(10);
-        System.out.println(uf.count());
-        int size = 5;
-        Percolation per = new Percolation(size);
-        for (int i = 1; i <= size; i++) {
-            for (int j = 1; j <= size; j++) {
-                System.out.println((i - 1) * 5 + (j - 1));
-            }
-        }
-    }
 }
