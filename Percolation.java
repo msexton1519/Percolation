@@ -45,24 +45,6 @@ public class Percolation {
             openHelper(row, col - 1, temp);
             openHelper(row, col + 1, temp);
             openSitesNum++;
-            /*
-            if (inBounds(row - 1, col) && isOpen(row - 1, col)) {
-                percolates.union(temp, twoDtoOne(row - 1, col));
-                fullSites.union(temp, twoDtoOne(row - 1, col));
-            }
-            if (inBounds(row + 1, col) && isOpen(row + 1, col)) {
-                percolates.union(temp, twoDtoOne(row + 1, col));
-                fullSites.union(temp, twoDtoOne(row + 1, col));
-            }
-            if (inBounds(row, col - 1) && isOpen(row, col - 1)) {
-                percolates.union(temp, twoDtoOne(row, col - 1));
-                fullSites.union(temp, twoDtoOne(row, col - 1));
-            }
-            if (inBounds(row, col + 1) && isOpen(row, col + 1)) {
-                percolates.union(temp, twoDtoOne(row, col + 1));
-                fullSites.union(temp, twoDtoOne(row, col + 1));
-            }
-            */
         }
     }
 
